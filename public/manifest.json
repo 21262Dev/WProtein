@@ -1,0 +1,36 @@
+{
+    "name": "WProtein",
+    "short_name": "WPApp",
+    "id": "/index.html",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#141537",
+    "theme_color": "transparent",
+    "orientation": "portrait-primary",
+    "icons":[
+        {
+            "src":"/android-chrome-128x128.png",
+            "sizes":"128x128",
+            "type":"image/png",
+            "purpose": "maskable"
+        },
+        {
+          "src":"/android-chrome-144x144.png",
+          "sizes":"144x144",
+          "type":"image/png",
+          "purpose": "any"
+        },
+        {
+          "src":"/android-chrome-192x192.png",
+          "sizes":"192x192",
+          "type":"image/png",
+          "purpose": "maskable"
+        },
+        {
+            "src":"/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

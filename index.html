@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WProtein</title>
+
+    <link rel="icon" sizes="512x512" href="./public/512x512.png">
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800;1,900&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#FCFAFF"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/App.jsx"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("/serviceworker.js")
+            .then((res) => console.log(res))
+            .catch((error) => console.log(error));
+        }
+
+        // function showNotification() {
+        //   Notification.requestPermission((result) => {
+        //       if (result === "granted") {
+        //         navigator.serviceWorker.ready.then((registration) => {
+        //           registration.showNotification("Vibration Sample", {
+        //             body: "Buzz! Buzz!",
+        //             icon: "../images/touch/chrome-touch-icon-192x192.png",
+        //             vibrate: [200, 100, 200, 100, 200, 100, 200],
+        //             tag: "vibration-sample",
+        //           });
+        //         });
+        //       }
+        //     });
+        //  }
+          //  showNotification();
+    </script>
+  </body>
+</html>

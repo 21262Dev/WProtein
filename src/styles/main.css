@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --white: #FCFAFF; /**4d3a60*/ /**FCFAFF*/
+    --eerie-black: #181914;
+    --french-purple: #4b37ff;
+    --selective-yellow: #F7B500; /**F7B500*/
+
+    --dark-purple-one: #0d0d27; /**d8d8eb*/ /**0d0d27*/
+    --dark-purple-two: #0e0e23; /**bebef3*/ /**0e0e23*/
+    
+    --dark-purp-btn: #191935; /**b4b4db*/ /**191935*/
+    --dark-purp-btn2: #252548; /**9797c8*/ /**252548*/
+    --scrollbar-vague: rgb(22, 24, 59, 0.3); /**rgba(180, 181, 206, 0.3)*/
+    /**rgb(22, 24, 59, 0.3)*/
+
+    --card-one: #16183b; /**d1d3f4*/ /**16183b*/
+    --card-two: #141536; /**a4a6d9*/ /**141536*/
+    --card-three: #141639; /**a8abdc*/ /**141639*/
+    --card-four: #22203a; /**726e96*/ /**22203a*/
+
+    --search-result: rgba(130, 96, 210, 0.1); /**rgba(255, 255, 255, 0.1);*/
+    /**rgba(135, 87, 213, 0.1);*/
+    --search-result-hover: rgba(255,255,255,0.1); /**rgba(255,255,255,0.2)*/
+    /**rgba(255,255,255,0.1);*/
+    --btn-txt: #ffffff;
+    --selective-yellow2: #ffc62a; /**ffc62a*/
+
+    --future-bg: #16183b; /**16183b*/
+    --yellow-two: #F7B500; /**9c8f3a*/
+    
+    --not-imp: #b5b1c5; /**adaab5*/ /**b5b1c5*/
+    --time: #e6e1f4;
+}
+
+html {
+    font-size: 1.8rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bold {
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.scrollzer {
+    opacity: 0.4;
+    animation: scrollz 1s;
+    transform: translateY(50px);
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 200px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes scrollz {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

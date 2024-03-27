@@ -1,0 +1,103 @@
+dialog.easter-egg {
+    width: 70%;
+    z-index: 2;
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 500px;
+    font-size: 0.8em;
+    max-width: 550px;
+    font-size: 0.8em;
+    padding: 2em 2em;
+    border-radius: 15px;
+    color: rgb(223, 223, 223);
+    background-color: rgba(24, 13, 39, 0.4);
+    border-bottom: 3px solid var(--selective-yellow);
+}
+
+dialog.easter-egg::backdrop {
+    background-color: rgba(7, 7, 12, 0.7);
+}
+
+.new-update-section {
+    margin-top: 1em;
+}
+
+li {
+    margin-left: 1em;
+}
+
+li::marker {
+    color: var(--selective-yellow);
+}
+
+.eater-egg-txt {
+    font-weight: 600; 
+    margin-left: 1em;
+    animation: vibin 2s ease infinite alternate;
+}
+
+.eater-egg-txt:hover {
+    cursor: pointer;
+}
+
+
+.credits-bar {
+    width: 100%;
+    display: flex;
+    padding: 1em 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits-bar img.f {
+    width: 12%;
+    margin: 0.5em;
+    max-width: 70px;
+    margin-right: 1em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    transform: rotate(20deg);
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.credits-bar img.f:hover {
+    width: 12%;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: rotate(380deg) scale(1.2);
+}
+
+.credits-bar h4 {
+    font-weight: 600;
+}
+
+@keyframes vibin {
+    from {
+        transform: translateY(10px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 500px) {
+    .credits-bar img.f {
+       display: none;
+    }
+
+    .eater-egg-txt {
+        margin: 0 auto;
+        animation: none;
+    }
+
+    .credits-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    dialog.easter-egg {
+       width: 90%;
+    }
+}
