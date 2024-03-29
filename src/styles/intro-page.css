@@ -17,9 +17,9 @@
     flex-direction: column;
     justify-content: center;
     color: var(--yellow-two);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(13, 0, 0, 0.5);
 }
 
 #filter-cover:has(span) .w {

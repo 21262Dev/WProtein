@@ -17,8 +17,8 @@ Vist the site [WProtein](https://wprotein-weather.netlify.app/)
 1. Tommorow Weather card shows inaccurate average weather icon
 2. Sometimes the icons for day appear for night
 3. Wrong border radius for rain chance.
-4. Local Storage Favorite Cities loading bug
-5. Doesn't add user's location obtained through navigator.geolocation once th user enable location after disabling it.
+4. Local Storage - Favorite Cities loading bug. Needs the user to reload the page twice
+5. Doesn't add user's location obtained through navigator.geolocation once the user enables location after disabling it.
 
 
 ## Update LOG
@@ -58,4 +58,4 @@ Vist the site [WProtein](https://wprotein-weather.netlify.app/)
     Loading Screen
     Added More Icons
                         
-Last updated - ***26/05/2023**
+Last updated - **26/05/2023**
